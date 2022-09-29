@@ -1,12 +1,12 @@
 
 
-all: keybytes main
+all: keybytes example
 
-main: main.c scline.c scline.h
-	gcc scline.c main.c -Wall -Wextra -o main
+example: example.c scline.c scline.h
+	gcc scline.c example.c -Wall -Wextra -o example
 
 keybytes: keybytes.c
 	gcc keybytes.c -Wall -Wextra -o keybytes
 
 clean:
-	rm -f *.out keybytes main
+	rm -f *.out keybytes example
